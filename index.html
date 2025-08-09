@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Idli Roundness Checker</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<h1>Idli Roundness Checker</h1>
+
+<button class="btn" id="start-webcam">Start Webcam</button>
+<button class="btn" id="stop-webcam" disabled>Stop Webcam</button>
+<label for="upload-image">Upload Image</label>
+<input type="file" id="upload-image" accept="image/*" />
+
+<video id="video" autoplay playsinline></video>
+<canvas id="canvas"></canvas>
+
+<div id="loading">⏳ Calculating roundness... please wait</div>
+
+<div id="result-card">
+  <div id="result-title">Analysis Result</div>
+  <div id="result">Roundness: --</div>
+  <div id="extra-details"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
